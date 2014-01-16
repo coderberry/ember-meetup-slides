@@ -5,10 +5,10 @@
 $social-tags: '#emberjs';
 $brand-small-icon-size: 30px;
 
-$gray-1: #e6e6e6;
+$gray-1: rgba(220, 220, 220, 0.7); // #e6e6e6;
 $gray-2: #a9a9a9;
 $gray-3: #797979;
-$gray-4: #515151;
+$gray-4: #F15E45;
 
 $brand-blue: #F15E45; // rgb(67, 135, 253);
 $brand-blue-secondary: #3c8ef3;
@@ -846,11 +846,11 @@ article.smaller {
   padding: $slide-left-right-padding $slide-left-right-padding * 2;
 
   h2 {
-    color: $gray-1;
+    color: white; // $gray-1;
     font-size: 60px;
   }
   h3 {
-    color: $gray-1;
+    color: white; // $gray-1;
     line-height: 2.8;
   }
   hgroup {

@@ -6,8 +6,8 @@ import jinja2
 import markdown
 
 def process_slides():
-  with codecs.open('../../presentation-output.html', 'w', encoding='utf8') as outfile:
-    md = codecs.open('slides.md', encoding='utf8').read()
+  with codecs.open('slides.html', 'w', encoding='utf8') as outfile:
+    md = codecs.open('scripts/md/slides.md', encoding='utf8').read()
     md_slides = md.split('\n---\n')
     print 'Compiled %s slides.' % len(md_slides)
 
@@ -29,7 +29,7 @@ def process_slides():
 
       slides.append(slide)
 
-    template = jinja2.Template(open('base.html').read())
+    template = jinja2.Template(open('scripts/md/base.html').read())
 
     outfile.write(template.render(locals()))
 

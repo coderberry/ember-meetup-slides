@@ -52,11 +52,9 @@ run watch with the style output flag:
 
 ## Building the slides
 
-The slides are all in a single markdown file [`slides.md`](scripts/md/slides). To build the slides, you need to run the python `render.py`
-script.
+The slides are all in a single markdown file [`slides.md`](scripts/md/slides). To build the slides, you need to run the monitor script:
 
-    $ cd scripts/md
-    $ python slides.md
+    $ ./monitor.sh
 
 ## Running the slides
 

@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#yourhashtag';
+$social-tags: '#emberjs';
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
@@ -10,7 +10,7 @@ $gray-2: #a9a9a9;
 $gray-3: #797979;
 $gray-4: #515151;
 
-$brand-blue: rgb(67, 135, 253);
+$brand-blue: #F15E45; // rgb(67, 135, 253);
 $brand-blue-secondary: #3c8ef3;
 $brand-blue-secondary2: #2a7cdf;
 
@@ -165,7 +165,7 @@ slides > slide {
   }
 
   &:not(.nobackground) {
-    //background: white url(../../images/google_developers_icon_128.png) ($brand-small-icon-size * 2) 98% no-repeat;
+    //background: white url(../../images/ember_icon_128.png) ($brand-small-icon-size * 2) 98% no-repeat;
     //@include background-size($brand-small-icon-size $brand-small-icon-size);
 
     &:before {
@@ -174,7 +174,7 @@ slides > slide {
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+      background: url(../../images/ember_icon_128.png) no-repeat 0 50%;
       @include background-size($brand-small-icon-size $brand-small-icon-size);
       padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
@@ -190,18 +190,18 @@ slides > slide {
     }
   }
 
-  &.title-slide {
-    &:after {
-      content: '';
-      background: url(../../images/io2012_logo.png) no-repeat 100% 50%;
-      @include background-size(contain);
-      position: absolute;
-      bottom: $slide-top-bottom-padding;
-      right: $slide-top-bottom-padding;
-      width: 100%;
-      height: 60px;
-    }
-  }
+  // &.title-slide {
+  //   &:after {
+  //     content: '';
+  //     background: url(../../images/io2012_logo.png) no-repeat 100% 50%;
+  //     @include background-size(contain);
+  //     position: absolute;
+  //     bottom: $slide-top-bottom-padding;
+  //     right: $slide-top-bottom-padding;
+  //     width: 100%;
+  //     height: 60px;
+  //   }
+  // }
 
   &.backdrop {
     z-index: -10;
@@ -837,7 +837,7 @@ article.smaller {
 /* ===== SLIDE CONTENT ===== */
 .logoslide {
   img {
-    width: 383px;
+    width: 242px;
     height: 92px;
   }
 }

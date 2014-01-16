@@ -1,52 +1,4 @@
-<style>
-@import "http://fonts.googleapis.com/css?family=Open Sans:regular,semibold,italic,italicsemibold|Inconsolata&amp;v2";
-body {
-  font-family: "Open Sans";
-  margin: 6em 2em 2em 2em;
-}
-body:before {
-  content: '';
-  position: fixed;
-  top: 2%;
-  right: 3%;
-  height: 100px;
-  width: 100px;
-  background: url(http://www.html5rocks.com/static/images/identity/HTML5_Badge_128.png) no-repeat 50% 50%;
-  background-size: contain;
-  z-index: 10;
-  opacity: 0.1;
-}
-h1, h2, h3, h4 {
-  font-weight: 600;
-}
-h1 {
-  position: fixed;
-  background: -webkit-linear-gradient(top, white 65%, rgba(255,255,255,0));
-  background: -moz-linear-gradient(top, white 65%, rgba(255,255,255,0));
-  background: -ms-linear-gradient(top, white 65%, rgba(255,255,255,0));
-  background: -o-linear-gradient(top, white 65%, rgba(255,255,255,0));
-  width: 100%;
-  height: 80px;
-  padding: 10px 10px 10px 1em;
-  left: 0;
-  top: 0;
-  margin: 0;
-}
-h1 img {
-  height: 30px;
-  vertical-align: middle;
-  margin-bottom: 8px;
-}
-a { color: navy; }
-pre {
-  background: #eee;
-  margin-left: 2em;
-  padding: 5px;
-  border-left: 3px solid #ccc;
-}
-</style>
-
-<h1><img src="images/io2012_logo.png"> HTML5 Slide Template</h1>
+# EmberJS Meetup Slides
 
 ## Configuring the slides
 
@@ -55,10 +7,10 @@ Some of the customizations include the title, Analytics tracking ID, speaker
 information (name, social urls, blog), web fonts to load, themes, and other
 general behavior.
 
-### Customizing the `#io12` hash
+### Customizing the `#emberjs` hash
 
-The bottom of the slides include `#io12` by default. If you'd like to change
-this, please update the variable `$social-tags: '#io12';` in
+The bottom of the slides include `#emberjs` by default. If you'd like to change
+this, please update the variable `$social-tags: '#emberjs';` in
 [`/theme/scss/default.scss`](theme/scss/default.scss).
 
 See the next section on "Editing CSS" before you go editing things.
@@ -84,7 +36,7 @@ First, install compass:
 Next, you'll want to watch for changes to the exiting .scss files in [`/theme/scss`](theme/scss)
 and any new one you add:
 
-    $ cd io-2012-slides
+    $ cd ember-meetup-slides
     $ compass watch
 
 This command automatically recompiles the .scss file when you make a change.
@@ -98,6 +50,14 @@ run watch with the style output flag:
 
 *Note:* You should not need to edit [`_base.scss`](theme/scss/_base.scss).
 
+## Building the slides
+
+The slides are all in a single markdown file [`slides.md`](scripts/md/slides). To build the slides, you need to run the python `render.py`
+script.
+
+    $ cd scripts/md
+    $ python slides.md
+
 ## Running the slides
 
 The slides can be run locally from `file://` making development easy :)
@@ -107,7 +67,7 @@ The slides can be run locally from `file://` making development easy :)
 If at some point you should need a web server, use [`serve.sh`](serve.sh). It will
 launch a simple one and point your default browser to [`http://localhost:8000/template.html`](http://localhost:8000/template.html):
 
-    $ cd io-2012-slides
+    $ cd ember-meetup-slides
     $ ./serve.sh
 
 You can also specify a custom port:
